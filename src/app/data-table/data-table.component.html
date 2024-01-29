@@ -1,0 +1,13 @@
+<table class="data-table">
+    <caption class="data-table-caption">Sample data table</caption>
+    <thead class="data-table-header">
+        <tr class="data-table-header-row">
+            <th class="data-table-header-cell" *ngFor="let column of columns">{{column}}</th>
+        </tr>
+    </thead>
+    <tbody class="data-table-body">
+        <tr class="data-table-row" *ngFor="let row of data">
+            <td class="data-table-cell" *ngFor="let value of row">{{value}}</td>
+        </tr>
+    </tbody>
+</table>
